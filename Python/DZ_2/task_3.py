@@ -2,7 +2,6 @@
 
 num = int (input('Введите число N --- '))
 i=1
-print('0')
 while i <= num:
     print(i)
     i=i*2
