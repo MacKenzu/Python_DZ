@@ -14,7 +14,7 @@ dict = {
         '8': {'ш','э','ю','j','x'},
         '10':{'ф','щ','ъ','q','z'}
         }
-k = 'МАМА'
+k = 'фрустрация'
 total_sum = 0
 for i in k:
      for key, values in dict.items():
