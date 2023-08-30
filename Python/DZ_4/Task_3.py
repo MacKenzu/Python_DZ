@@ -18,11 +18,12 @@ for _ in range(fridg_count):
 count = 0
 count_fridg = 0
 for i in fridg_code:
-    count = 0 
+    count = 0
+    count_fridg += 1 
     for j in find_code:
         if i.find(j) != -1:
             i = i[i.index(j):]
             count += 1
         if count == len(find_code):
             print('холодильник',count_fridg,'заражен')
-    count_fridg += 1
+    
