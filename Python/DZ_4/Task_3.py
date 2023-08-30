@@ -12,7 +12,7 @@
 fridg_count = int(input('сколько холодильников:'))
 fridg_code = []
 find_code = 'anton'
-for i in range(fridg_count):
+for _ in range(fridg_count):
     str = input("Введите строку: ")
     fridg_code.append(str)
 count = 0
@@ -24,5 +24,5 @@ for i in fridg_code:
             i = i[i.index(j):]
             count += 1
         if count == len(find_code):
-            count_fridg += 1
             print('холодильник',count_fridg,'заражен')
+    count_fridg += 1
