@@ -15,13 +15,14 @@ find_code = 'anton'
 for i in range(fridg_count):
     str = input("Введите строку: ")
     fridg_code.append(str)
-print(fridg_code)
 count = 0
-index = 0
-index1 = 0
+count_fridg = 0
 for i in fridg_code:
     for j in find_code:
         if i.find(j) != -1:
-            i = str[str.index(j):]
-            print(i,j)
- 
+            i = i[i.index(j):]
+            count += 1
+        if count == len(find_code):
+            count_fridg += 1
+            count = 0
+            print('холодильник',count_fridg,'заражен')
