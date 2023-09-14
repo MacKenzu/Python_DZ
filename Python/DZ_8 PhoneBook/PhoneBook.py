@@ -10,7 +10,7 @@ def show_menu():
     return choice
 def work_with_phonebook():
     choice=show_menu()
-    phone_book=read_txt('phonebook.txt')
+    phone_book=read_txt('phonebook.csv')
     while (choice!=7):
         if choice==1:
             print(phone_book)
